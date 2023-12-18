@@ -16,7 +16,7 @@ const PackagesCard = ({ title, type, price, image, location }: Props) => {
                     fill
                     alt='hero'
                     className="h-full w-full object-cover -z-10 rounded-lg"
-                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="flex h-full p-3 items-end bg-gradient-to-t from-[#0000008d] to-transparent">
                     {/* location icon svg */}

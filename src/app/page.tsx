@@ -1,6 +1,7 @@
 import CardOne from '@/components/BigCard'
 import PackagesCard from '@/components/PackagesCard'
 import SmallCard from '@/components/SmallCard'
+import TopDestinationCard from '@/components/TopDestinationCard'
 
 import Image from 'next/image'
 
@@ -13,7 +14,7 @@ export default function Home() {
             alt='hero'
             className="h-full w-full object-contain -z-10"
             fill
-            sizes="(min-width: 1024px) 100vw, 100vw"
+            sizes="(max-width: 768px) 200vw, (max-width: 1200px) 100vw, 1vw"
             objectFit='cover'
           />
           <div className='z-10 text-center mt-32 md:mt-0'>
@@ -69,15 +70,15 @@ export default function Home() {
         </div>
 
       </div>
-      <div className='container mx-auto mt-10 md:mt-20'>
+      <div className='container mx-auto mt-10 md:mt-20 px-2 md:px-0'>
         <div className='text-center my-8'>
           <h2 className='font-bold text-3xl'>Unmissable Destinations</h2>
         </div>
-        <div className='grid grid-cols-2 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           <div>
             <CardOne title='New York' description='Take in the iconic skyline and visit the neighborhood hangouts that you’ve only ever seen on TV.' image='/img/package1.jpg' />
           </div>
-          <div className='relative grid grid-cols-2 gap-4'>
+          <div className='relative grid grid-cols-1 md:grid-cols-2 gap-4'>
             <SmallCard title='NYC: Priority or Flexible Statue of Liberty Ticket' image='/img/package2.jpg' price='1000' />
             <SmallCard title='One World Observatory: Skip-All-Lines and Express Tickets' image='/img/package3.jpg' price='1000' />
             <SmallCard title='New York: NYC Explorer Pass w. Over 85 Tours and Attractions' image='/img/package4.jpg' price='1000' />
@@ -102,16 +103,36 @@ export default function Home() {
         <div className='text-center my-8'>
           <h2 className='font-bold text-3xl'>Popular Packages</h2>
         </div>
-        <div className='grid grid-cols-  gap-8'>
-          <div className='relative grid grid-cols-4 gap-4'>
-            <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package6.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
-            <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package7.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
-            <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package8.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
-            <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package9.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
 
-          </div>
+        <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-2'>
+          <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package6.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
+          <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package7.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
+          <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package8.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
+          <PackagesCard title='Mangrove Tunnel Kayak Eco' image='/img/package9.jpg' price='1000' location='Greater London, United Kingdom' type='Tour' />
 
         </div>
+
+
+      </div >
+      <div className='container mx-auto mt-10 md:mt-20'>
+        <div className='text-center my-8'>
+          <h2 className='font-bold text-3xl'>Top Destination</h2>
+        </div>
+
+        <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-5 p-2'>
+          <TopDestinationCard name='Turkey' image='/img/destination1.jpg' />
+          <TopDestinationCard name='United States' image='/img/destination2.jpg' />
+          <TopDestinationCard name='Ukraine' image='/img/destination3.jpg' />
+          <TopDestinationCard name='France' image='/img/destination4.jpg' />
+          <TopDestinationCard name='India' image='/img/destination5.jpg' />
+          <TopDestinationCard name='United Kingdom' image='/img/destination6.jpg' />
+          <TopDestinationCard name='Germany' image='/img/destination7.jpg' />
+          <TopDestinationCard name='Greece' image='/img/destination8.jpg' />
+          <TopDestinationCard name='Canada' image='/img/destination9.jpg' />
+          <TopDestinationCard name='Italy' image='/img/destination10.jpg' />
+        </div>
+
+
       </div >
 
     </>
