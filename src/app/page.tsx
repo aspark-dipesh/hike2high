@@ -14,7 +14,7 @@ export default function Home() {
             alt='hero'
             className="h-full w-full object-contain -z-10"
             fill
-            sizes="(max-width: 768px) 200vw, (max-width: 1200px) 100vw, 1vw"
+            sizes="(max-width: 768px) 200vw, (max-width: 1200px) 100vw, 100vw"
             objectFit='cover'
           />
           <div className='z-10 text-center mt-32 md:mt-0'>
