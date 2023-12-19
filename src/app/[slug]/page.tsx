@@ -30,8 +30,8 @@ export default async function DestinationDetails({ params }: { params: { slug: s
                 />
                 <GalleryComp />
             </div>
-            <div className="container grid grid-cols-4 mx-auto mt-8 gap-4 p-2 text-gray-600">
-                <div className="col-span-3">
+            <div className="container grid grid-cols-12 mx-auto mt-8 gap-10 p-2 text-gray-600 ">
+                <div className="col-span-9 shadow-md p-5">
                     <h2 className="font-bold text-3xl ">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h2>
 
                     {/* location */}
@@ -131,7 +131,60 @@ export default async function DestinationDetails({ params }: { params: { slug: s
 
 
                 </div>
-                <div>
+                <div className="col-span-3">
+                    {/* Book This trip Now */}
+                    <div className="card">
+                        <h2 className="card-title">Book Now</h2>
+                    </div>
+                    {/* divider */}
+                    <div className="divider my-5"></div>
+
+                    <form action="">
+                        {/* trip start date  */}
+                        <div className="card shadow-md p-3 px-auto">
+                            <div className="">
+                                <h2 className="card-title">Trip Start Date</h2>
+                                <input type="date" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+                            </div>
+                            {/* number of people */}
+                            <div className="mt-5">
+                                <h2 className="card-title">Number of People</h2>
+                                <input type="number" placeholder="Type here" className="input input-bordered w-full max-w-xs" min={1} />
+                            </div>
+                        </div>
+
+                        {/* divider */}
+                        <div className="divider my-5"></div>
+                        {/* personal information */}
+                        <div className="mt-5 flex flex-col gap-5 card shadow-md p-3 px-auto">
+                            <h2 className="card-title">Personal Information</h2>
+                            <input type="text" placeholder="Full Name" className="input input-bordered w-full max-w-xs" />
+                            <input type="email" placeholder="Email" className="input input-bordered w-full max-w-xs" />
+                            <input type="number" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
+                            {/* dob */}
+                            <input type="date" placeholder="Date of Birth" className="input input-bordered w-full max-w-xs" />
+                            {/* country */}
+                            <select className="select select-bordered w-full max-w-xs">
+                                <option>Country</option>
+                                <option>Nepal</option>
+                                <option>India</option>
+                                <option>China</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                            </select>
+
+                        </div>
+                        {/* special requirement  */}
+                        <div className="mt-5 card shadow-md p-3">
+                            <h2 className="card-title">Special Requirement</h2>
+                            <textarea name="" id="" rows={5} className="textarea textarea-bordered w-full max-w-xs"></textarea>
+                        </div>
+                        {/* Book now Button */}
+                        <div className=" p-3">
+                            <button className="btn btn-primary btn-block">Book Now</button>
+                        </div>
+                    </form>
+
 
                 </div>
 
