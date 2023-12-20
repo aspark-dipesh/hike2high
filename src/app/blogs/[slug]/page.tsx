@@ -84,7 +84,7 @@ export default function BlogDetails() {
                         </p>
                     </div>
                     <div className="mb-7 mt-7 flex justify-center">
-                        <a className="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 " href="/">← View all posts</a>
+                        <a className="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 " href="/blogs">← View all posts</a>
                     </div>
                     <div className="px-8 py-8 mt-3 text-gray-500 rounded-2xl bg-gray-50  ">
                         <div className="flex flex-wrap items-start sm:space-x-6 sm:flex-nowrap"><div className="relative flex-shrink-0 w-24 h-24 mt-1 ">

@@ -36,7 +36,7 @@ export default function Home() {
                   <label
                     htmlFor="username"
                     className="text-dark absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-dark"
-                  >Name</label>
+                  >Destination</label>
                 </div>
                 <div className="relative">
                   <input
@@ -48,7 +48,7 @@ export default function Home() {
                   <label
                     htmlFor="username"
                     className="text-dark absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-dark"
-                  >Name</label>
+                  >From - TO</label>
                 </div>
                 <div className="relative">
                   <input
@@ -60,7 +60,7 @@ export default function Home() {
                   <label
                     htmlFor="username"
                     className="text-dark absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-dark"
-                  >Name</label>
+                  >Outdoors</label>
                 </div>
                 {/* search button */}
                 <button className='bg-white text-black px-4 py-2 rounded-md'>Search</button>

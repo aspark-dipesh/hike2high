@@ -13,7 +13,7 @@ const BlogCard = ({ author, date, image, title, authorImage, description }: Blog
         <>
             <div className="group cursor-pointer shadow-lg p-3">
                 <div className=" overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105   ">
-                    <a className="relative block aspect-square" href="/post/every-next-level-of-your-life-will-demand-a-different-you">
+                    <a className="relative block aspect-square" href="/blogs/test">
                         <Image alt="Thumbnail" fill className="object-cover transition-all" sizes="(max-width: 768px) 30vw, 33vw" src={image} />
                     </a>
                 </div>
@@ -25,13 +25,13 @@ const BlogCard = ({ author, date, image, title, authorImage, description }: Blog
                             </a>
                         </div>
                         <h2 className="text-lg font-semibold leading-snug tracking-tight mt-2    ">
-                            <a href="/post/every-next-level-of-your-life-will-demand-a-different-you">
+                            <a href="/blogs/test">
                                 <span className="bg-gradient-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]  ">{title}</span>
                             </a>
                         </h2>
                         <div className="">
                             <p className="mt-2 line-clamp-3 text-sm text-gray-500 ">
-                                <a href="/post/every-next-level-of-your-life-will-demand-a-different-you">That was so fun! I’ve got a new addiction! my athlete friend exclaimed, tired but happy in the car on the way home. “Let’s do it again tomorrow.”</a>
+                                <a href="/blogs/test">That was so fun! I’ve got a new addiction! my athlete friend exclaimed, tired but happy in the car on the way home. “Let’s do it again tomorrow.”</a>
                             </p>
                         </div>
                         <div className="mt-3 flex items-center space-x-3 text-gray-500 ">
