@@ -47,7 +47,7 @@ export default async function DestinationDetails({ params }: { params: { slug: s
                         <p className="text-gray-500">Greater London, United Kingdom</p>-<span className="link link-primary">View on map</span>
                     </div>
                     <div className="divider my-5"></div>
-                    <div className="flex justify-between">
+                    <div className="flex flex-wrap gap-8">
                         {/* duration */}
                         <div className="flex gap-4">
                             {/* alarm clock svg icon */}
