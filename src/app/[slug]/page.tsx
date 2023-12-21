@@ -31,7 +31,7 @@ export default async function DestinationDetails({ params }: { params: { slug: s
                 <GalleryComp />
             </div>
             <div className="container grid grid-cols-12 mx-auto mt-8 gap-10 p-2 text-gray-600 ">
-                <div className="col-span-9 shadow-md p-5">
+                <div className="col-span-12 md:col-span-9 shadow-md p-5">
                     <h2 className="font-bold text-3xl ">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h2>
 
                     {/* location */}
@@ -131,7 +131,7 @@ export default async function DestinationDetails({ params }: { params: { slug: s
 
 
                 </div>
-                <div className="col-span-3">
+                <div className="col-span-12 md:col-span-3">
                     {/* Book This trip Now */}
                     <div className="card">
                         <h2 className="card-title">Book Now</h2>
