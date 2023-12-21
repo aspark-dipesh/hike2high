@@ -4,9 +4,9 @@ import Image from 'next/image'
 export default function About() {
     return (
         <div className=" mx-auto p-8">
-            <section className="mb-8 flex items-center container">
+            <section className="mb-8 grid grid-cols-1 md:grid-cols-2 container gap-8">
 
-                <div className="w-1/2  mr-8 text-center">
+                <div className="mr-8 text-center">
                     <h1 className="text-4xl font-bold mb-6">Our Mission</h1>
                     <p className="text-lg mb-4">
                         At Hike to High, our mission is to create memorable and transformative travel experiences that inspire a deeper connection with the world. We believe in crafting journeys that not only showcase the beauty of diverse landscapes but also contribute positively to the communities and environments we encounter.
@@ -15,7 +15,7 @@ export default function About() {
                         Whether you&apos;re scaling peaks, immersing yourself in local cultures, or simply enjoying the tranquility of nature, our goal is to make every adventure with us a life-enriching experience.
                     </p>
                 </div>
-                <div className="w-1/2 ">
+                <div className="">
                     <div className='w-full aspect-[1/1] relative'>
                         <Image
                             src={`https://source.unsplash.com/random/1600x900?sig=15`}
@@ -35,7 +35,7 @@ export default function About() {
 
 
                 <Image
-                    src={`https://source.unsplash.com/random/1600x900?sig=14`}
+                    src={`https://source.unsplash.com/random/1600x900?sig=11`}
                     alt="Reasons Image"
                     fill
                     className='aspect-video object-cover rounded-md'
@@ -55,13 +55,10 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="flex items-center container">
-                <div className="w-1/2 mr-8">
-
-
-
+            <section className="grid grid-cols-1 md:grid-cols-2 container gap-8">
+                <div className="">
                     <Image
-                        src={`https://source.unsplash.com/random/1600x900?sig=13`}
+                        src={`https://source.unsplash.com/random/1600x900?sig=18`}
                         alt="Why Choose Image"
                         width={800}
                         height={450}
@@ -69,7 +66,7 @@ export default function About() {
                     />
 
                 </div>
-                <div className="w-1/2">
+                <div className="">
                     <h1 className="text-4xl font-bold mb-6">Why Choose Hike to High</h1>
                     <p className="text-lg mb-4">
                         Embark on your next adventure with confidence, knowing that Hike to High is dedicated to providing unparalleled travel experiences. Here are some compelling reasons to choose us:

@@ -19,7 +19,7 @@ export default async function DestinationDetails({ params }: { params: { slug: s
     const data = await getData(params.slug)
 
     return (
-        <>
+        <main>
             <div className="relative w-full aspect-[16/5]">
                 <Image
                     src={'/img/ProductDetail.jpg'}
@@ -30,9 +30,9 @@ export default async function DestinationDetails({ params }: { params: { slug: s
                 />
                 <GalleryComp />
             </div>
-            <div className="container grid grid-cols-12 mx-auto mt-8 gap-10 p-2 text-gray-600 ">
-                <div className="col-span-12 md:col-span-9 shadow-md p-5">
-                    <h2 className="font-bold text-3xl ">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h2>
+            <div className="container grid grid-cols-1 md:grid-cols-10 mt-8 gap-10 p-2 text-gray-600 w-full ">
+                <div className="col-span-1 md:col-span-7  shadow-md p-1 md:p-5 px-2">
+                    <h2 className="font-bold text-lg md:text-3xl ">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h2>
 
                     {/* location */}
                     <div className="flex items-center gap-2">
@@ -86,7 +86,7 @@ export default async function DestinationDetails({ params }: { params: { slug: s
                     </div>
                     <div className="mt-5">
                         <h1 className="font-bold text-2xl">Description</h1>
-                        <p className="mt-3">
+                        <p className="mt-3 flex flex-wrap">
                             A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
                         </p>
                         <p className="mt-3">
@@ -131,7 +131,7 @@ export default async function DestinationDetails({ params }: { params: { slug: s
 
 
                 </div>
-                <div className="col-span-12 md:col-span-3">
+                <div className="col-span-1 md:col-span-3 ">
                     {/* Book This trip Now */}
                     <div className="card">
                         <h2 className="card-title">Book Now</h2>
@@ -189,6 +189,6 @@ export default async function DestinationDetails({ params }: { params: { slug: s
                 </div>
 
             </div>
-        </>
+        </main>
     );
 }

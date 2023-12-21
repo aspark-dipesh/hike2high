@@ -15,7 +15,7 @@ export default function BlogDetails() {
                     <div className="mt-3 flex justify-center space-x-3 text-gray-500 ">
                         <div className="flex items-center gap-3">
                             <div className="relative h-10 w-10 flex-shrink-0"><a href="/author/erika-oliver">
-                                <Image alt="Erika Oliver" loading="lazy" decoding="async" fill className="rounded-full object-cover" sizes="40px" src={'/h'} />
+                                <Image alt="Erika Oliver" loading="lazy" decoding="async" fill className="rounded-full object-cover" sizes="40px" src={'https://source.unsplash.com/random/40x40?sig=12'} />
                             </a>
                             </div>
                             <div>
@@ -89,7 +89,7 @@ export default function BlogDetails() {
                     <div className="px-8 py-8 mt-3 text-gray-500 rounded-2xl bg-gray-50  ">
                         <div className="flex flex-wrap items-start sm:space-x-6 sm:flex-nowrap"><div className="relative flex-shrink-0 w-24 h-24 mt-1 ">
                             <a href="#">
-                                <Image alt="Erika Oliver" fill className="rounded-full object-cover" src={'/d'} />
+                                <Image alt="Erika Oliver" fill className="rounded-full object-cover" src={'https://source.unsplash.com/random/40x40?sig=12'} />
                             </a></div><div><div className="mb-3"><h3 className="text-lg font-medium text-gray-800 ">About Erika Oliver</h3>
                             </div>
                                 <div>

@@ -17,7 +17,7 @@ export default function Home() {
             sizes="(max-width: 768px) 200vw, (max-width: 1200px) 100vw, 100vw"
             objectFit='cover'
           />
-          <div className='z-10 text-center mt-32 md:mt-0'>
+          <div className='z-0 text-center mt-32 md:mt-0'>
             <h2 className='font-bold text-white text-2xl md:text-6xl'>Love where you&apos;re going</h2>
             <h4 className='font-semi mt-1 md:mt-2 text-white text-md md:text-2xl'>Book experiences you’ll want to tell the world about</h4>
           </div>
